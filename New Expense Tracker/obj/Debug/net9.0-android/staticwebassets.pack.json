@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\New Expense Tracker.styles.css",
-      "PackagePath": "staticwebassets\\New Expense Tracker.styles.css"
+      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Meow.styles.css",
+      "PackagePath": "staticwebassets\\Meow.styles.css"
     },
     {
       "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\app.css",
@@ -25,24 +25,24 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.New Expense Tracker.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.Meow.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.New Expense Tracker.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.Meow.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.build.New Expense Tracker.props",
-      "PackagePath": "build\\New Expense Tracker.props"
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.build.Meow.props",
+      "PackagePath": "build\\Meow.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildMultiTargeting.New Expense Tracker.props",
-      "PackagePath": "buildMultiTargeting\\New Expense Tracker.props"
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildMultiTargeting.Meow.props",
+      "PackagePath": "buildMultiTargeting\\Meow.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildTransitive.New Expense Tracker.props",
-      "PackagePath": "buildTransitive\\New Expense Tracker.props"
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildTransitive.Meow.props",
+      "PackagePath": "buildTransitive\\Meow.props"
     }
   ],
   "ElementsToRemove": []

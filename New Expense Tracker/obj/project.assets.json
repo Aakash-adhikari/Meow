@@ -34347,9 +34347,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\New Expense Tracker.csproj",
-      "projectName": "New Expense Tracker",
-      "projectPath": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\New Expense Tracker.csproj",
+      "projectUniqueName": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\Meow.csproj",
+      "projectName": "Meow",
+      "projectPath": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\Meow.csproj",
       "packagesPath": "C:\\Users\\aakas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "Hash": "vXf2Qd1qYaDkezq0A5m6YbCYQ8Fo2lHWWB2BnBQxXLs=",
-  "Source": "New Expense Tracker",
+  "Hash": "Ie8CkCMWN+dKarf/T/6fqBrqTTslbc7LZL5dcGWt/zU=",
+  "Source": "Meow",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "New Expense Tracker\\wwwroot",
-      "Source": "New Expense Tracker",
+      "Name": "Meow\\wwwroot",
+      "Source": "Meow",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
@@ -17,113 +17,29 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\9l38hu2p45-dex3usdpik.gz",
-      "SourceId": "New Expense Tracker",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
-      "BasePath": "/",
-      "RelativePath": "css/app#[.{fingerprint=dex3usdpik}]?.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\app.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "yoqixuv0fc",
-      "Integrity": "Xr9ThdCQg33KZ0B8F8h8GnUXEhfP/LheD7WbiWrJp/U=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\app.css"
-    },
-    {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\kn48asdc96-fslod0wrwa.gz",
-      "SourceId": "New Expense Tracker",
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\crwqh2ohp3-fslod0wrwa.gz",
+      "SourceId": "Meow",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "New Expense Tracker#[.{fingerprint=fslod0wrwa}]?.styles.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\New Expense Tracker.styles.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "d8g8w4js53",
-      "Integrity": "LeTSguL+WXY/ZqC8497yhNstFDewUuYfdvzwT4h79hY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\New Expense Tracker.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\p7osdej53m-8inm30yfxf.gz",
-      "SourceId": "New Expense Tracker",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
-      "BasePath": "/",
-      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "fbl5ivwo6k",
-      "Integrity": "Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\rgnq3b0ju5-fslod0wrwa.gz",
-      "SourceId": "New Expense Tracker",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
-      "BasePath": "/",
-      "RelativePath": "New Expense Tracker#[.{fingerprint=fslod0wrwa}]!.bundle.scp.css.gz",
+      "RelativePath": "Meow#[.{fingerprint=fslod0wrwa}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\New Expense Tracker.bundle.scp.css",
+      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\Meow.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "d8g8w4js53",
       "Integrity": "LeTSguL+WXY/ZqC8497yhNstFDewUuYfdvzwT4h79hY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\New Expense Tracker.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\Meow.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\w3xw2m2aid-6gzpyzhau4.gz",
-      "SourceId": "New Expense Tracker",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
-      "BasePath": "/",
-      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "joqzyw7ssu",
-      "Integrity": "LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\xoball5rpl-dws6mcc5ds.gz",
-      "SourceId": "New Expense Tracker",
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\mzk1zdyir0-dws6mcc5ds.gz",
+      "SourceId": "Meow",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
@@ -143,12 +59,96 @@
       "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\New Expense Tracker.styles.css",
-      "SourceId": "New Expense Tracker",
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\pbw5pn722b-dex3usdpik.gz",
+      "SourceId": "Meow",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint=dex3usdpik}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "yoqixuv0fc",
+      "Integrity": "Xr9ThdCQg33KZ0B8F8h8GnUXEhfP/LheD7WbiWrJp/U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\qfnztcvo1d-6gzpyzhau4.gz",
+      "SourceId": "Meow",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "joqzyw7ssu",
+      "Integrity": "LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\yqybktu1zt-8inm30yfxf.gz",
+      "SourceId": "Meow",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fbl5ivwo6k",
+      "Integrity": "Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\zhm9n1wcz4-fslod0wrwa.gz",
+      "SourceId": "Meow",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "Meow#[.{fingerprint=fslod0wrwa}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Meow.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "d8g8w4js53",
+      "Integrity": "LeTSguL+WXY/ZqC8497yhNstFDewUuYfdvzwT4h79hY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Meow.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Meow.styles.css",
+      "SourceId": "Meow",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\",
       "BasePath": "/",
-      "RelativePath": "New Expense Tracker#[.{fingerprint}]?.styles.css",
+      "RelativePath": "Meow#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -161,15 +161,15 @@
       "Integrity": "sY7G4VnQrg//9PlsbhUBy1ReJY2gh4+VMSdTLMD09BI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\New Expense Tracker.styles.css"
+      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Meow.styles.css"
     },
     {
-      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\New Expense Tracker.bundle.scp.css",
-      "SourceId": "New Expense Tracker",
+      "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\Meow.bundle.scp.css",
+      "SourceId": "Meow",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\",
       "BasePath": "/",
-      "RelativePath": "New Expense Tracker#[.{fingerprint}]!.bundle.scp.css",
+      "RelativePath": "Meow#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -182,11 +182,11 @@
       "Integrity": "sY7G4VnQrg//9PlsbhUBy1ReJY2gh4+VMSdTLMD09BI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\New Expense Tracker.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\Meow.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\app.css",
-      "SourceId": "New Expense Tracker",
+      "SourceId": "Meow",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\",
       "BasePath": "/",
@@ -207,7 +207,7 @@
     },
     {
       "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "SourceId": "New Expense Tracker",
+      "SourceId": "Meow",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\",
       "BasePath": "/",
@@ -228,7 +228,7 @@
     },
     {
       "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "SourceId": "New Expense Tracker",
+      "SourceId": "Meow",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\",
       "BasePath": "/",
@@ -249,7 +249,7 @@
     },
     {
       "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\favicon.png",
-      "SourceId": "New Expense Tracker",
+      "SourceId": "Meow",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\",
       "BasePath": "/",
@@ -270,7 +270,7 @@
     },
     {
       "Identity": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\index.html",
-      "SourceId": "New Expense Tracker",
+      "SourceId": "Meow",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\",
       "BasePath": "/",
@@ -293,7 +293,7 @@
   "Endpoints": [
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\9l38hu2p45-dex3usdpik.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\pbw5pn722b-dex3usdpik.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -385,7 +385,7 @@
     },
     {
       "Route": "css/app.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\9l38hu2p45-dex3usdpik.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\pbw5pn722b-dex3usdpik.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -430,7 +430,7 @@
     },
     {
       "Route": "css/app.dex3usdpik.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\9l38hu2p45-dex3usdpik.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\pbw5pn722b-dex3usdpik.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -538,7 +538,7 @@
     },
     {
       "Route": "css/app.dex3usdpik.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\9l38hu2p45-dex3usdpik.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\pbw5pn722b-dex3usdpik.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -591,7 +591,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\w3xw2m2aid-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\qfnztcvo1d-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -699,7 +699,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\w3xw2m2aid-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\qfnztcvo1d-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -752,7 +752,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\w3xw2m2aid-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\qfnztcvo1d-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -844,7 +844,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\p7osdej53m-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\yqybktu1zt-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -952,7 +952,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\p7osdej53m-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\yqybktu1zt-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1005,7 +1005,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\w3xw2m2aid-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\qfnztcvo1d-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1050,7 +1050,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\p7osdej53m-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\yqybktu1zt-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1142,7 +1142,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\p7osdej53m-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\yqybktu1zt-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1269,7 +1269,7 @@
     },
     {
       "Route": "index.dws6mcc5ds.html",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\xoball5rpl-dws6mcc5ds.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\mzk1zdyir0-dws6mcc5ds.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1377,7 +1377,7 @@
     },
     {
       "Route": "index.dws6mcc5ds.html.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\xoball5rpl-dws6mcc5ds.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\mzk1zdyir0-dws6mcc5ds.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1430,7 +1430,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\xoball5rpl-dws6mcc5ds.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\mzk1zdyir0-dws6mcc5ds.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1522,7 +1522,7 @@
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\xoball5rpl-dws6mcc5ds.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\mzk1zdyir0-dws6mcc5ds.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1566,8 +1566,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.bundle.scp.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\rgnq3b0ju5-fslod0wrwa.gz",
+      "Route": "Meow.bundle.scp.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\crwqh2ohp3-fslod0wrwa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1590,7 +1590,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1621,8 +1621,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.bundle.scp.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\New Expense Tracker.bundle.scp.css",
+      "Route": "Meow.bundle.scp.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\Meow.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1643,7 +1643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1658,8 +1658,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\rgnq3b0ju5-fslod0wrwa.gz",
+      "Route": "Meow.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\crwqh2ohp3-fslod0wrwa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1680,7 +1680,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1703,8 +1703,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.fslod0wrwa.bundle.scp.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\rgnq3b0ju5-fslod0wrwa.gz",
+      "Route": "Meow.fslod0wrwa.bundle.scp.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\crwqh2ohp3-fslod0wrwa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1727,7 +1727,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1757,7 +1757,7 @@
         },
         {
           "Name": "label",
-          "Value": "New Expense Tracker.bundle.scp.css"
+          "Value": "Meow.bundle.scp.css"
         },
         {
           "Name": "integrity",
@@ -1766,8 +1766,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.fslod0wrwa.bundle.scp.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\New Expense Tracker.bundle.scp.css",
+      "Route": "Meow.fslod0wrwa.bundle.scp.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\Meow.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1788,7 +1788,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1802,7 +1802,7 @@
         },
         {
           "Name": "label",
-          "Value": "New Expense Tracker.bundle.scp.css"
+          "Value": "Meow.bundle.scp.css"
         },
         {
           "Name": "integrity",
@@ -1811,8 +1811,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.fslod0wrwa.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\rgnq3b0ju5-fslod0wrwa.gz",
+      "Route": "Meow.fslod0wrwa.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\crwqh2ohp3-fslod0wrwa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1833,7 +1833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1855,7 +1855,7 @@
         },
         {
           "Name": "label",
-          "Value": "New Expense Tracker.bundle.scp.css.gz"
+          "Value": "Meow.bundle.scp.css.gz"
         },
         {
           "Name": "integrity",
@@ -1864,8 +1864,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.fslod0wrwa.styles.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\kn48asdc96-fslod0wrwa.gz",
+      "Route": "Meow.fslod0wrwa.styles.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\zhm9n1wcz4-fslod0wrwa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1888,7 +1888,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1918,7 +1918,7 @@
         },
         {
           "Name": "label",
-          "Value": "New Expense Tracker.styles.css"
+          "Value": "Meow.styles.css"
         },
         {
           "Name": "integrity",
@@ -1927,8 +1927,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.fslod0wrwa.styles.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\New Expense Tracker.styles.css",
+      "Route": "Meow.fslod0wrwa.styles.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Meow.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1949,7 +1949,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1963,7 +1963,7 @@
         },
         {
           "Name": "label",
-          "Value": "New Expense Tracker.styles.css"
+          "Value": "Meow.styles.css"
         },
         {
           "Name": "integrity",
@@ -1972,8 +1972,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.fslod0wrwa.styles.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\kn48asdc96-fslod0wrwa.gz",
+      "Route": "Meow.fslod0wrwa.styles.css.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\zhm9n1wcz4-fslod0wrwa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1994,7 +1994,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2016,7 +2016,7 @@
         },
         {
           "Name": "label",
-          "Value": "New Expense Tracker.styles.css.gz"
+          "Value": "Meow.styles.css.gz"
         },
         {
           "Name": "integrity",
@@ -2025,8 +2025,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.styles.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\kn48asdc96-fslod0wrwa.gz",
+      "Route": "Meow.styles.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\zhm9n1wcz4-fslod0wrwa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2049,7 +2049,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2080,8 +2080,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.styles.css",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\New Expense Tracker.styles.css",
+      "Route": "Meow.styles.css",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\Meow.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2102,7 +2102,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2117,8 +2117,8 @@
       ]
     },
     {
-      "Route": "New Expense Tracker.styles.css.gz",
-      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\kn48asdc96-fslod0wrwa.gz",
+      "Route": "Meow.styles.css.gz",
+      "AssetFile": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-android\\compressed\\zhm9n1wcz4-fslod0wrwa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2139,7 +2139,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 04:25:22 GMT"
+          "Value": "Fri, 17 Jan 2025 05:35:08 GMT"
         },
         {
           "Name": "Cache-Control",

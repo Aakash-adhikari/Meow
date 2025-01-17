@@ -1,18 +1,18 @@
 runtimes\win-x64\native\WebView2Loader.dll
 Components\Layout\MainLayout.razor.css
 Components\Layout\NavMenu.razor.css
-wwwroot\css\app.css.gz
-wwwroot\New Expense Tracker.styles.css.gz
-wwwroot\css\bootstrap\bootstrap.min.css.map.gz
-wwwroot\css\app.css.br
-wwwroot\New Expense Tracker.styles.css.br
-wwwroot\css\bootstrap\bootstrap.min.css.map.br
-wwwroot\New Expense Tracker.fslod0wrwa.bundle.scp.css.br
-wwwroot\css\bootstrap\bootstrap.min.css.br
-wwwroot\index.html.br
-wwwroot\New Expense Tracker.fslod0wrwa.bundle.scp.css.gz
-wwwroot\css\bootstrap\bootstrap.min.css.gz
+wwwroot\Meow.fslod0wrwa.bundle.scp.css.gz
 wwwroot\index.html.gz
+wwwroot\css\app.css.gz
+wwwroot\Meow.fslod0wrwa.bundle.scp.css.br
+wwwroot\index.html.br
+wwwroot\css\app.css.br
+wwwroot\css\bootstrap\bootstrap.min.css.br
+wwwroot\css\bootstrap\bootstrap.min.css.map.br
+wwwroot\Meow.styles.css.br
+wwwroot\css\bootstrap\bootstrap.min.css.gz
+wwwroot\css\bootstrap\bootstrap.min.css.map.gz
+wwwroot\Meow.styles.css.gz
 OpenSans-Regular.ttf
 appicon.ico
 appiconLargeTile.scale-100.png
@@ -70,8 +70,8 @@ splashSplashScreen.scale-125.png
 splashSplashScreen.scale-150.png
 splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
-wwwroot\New Expense Tracker.styles.css
-wwwroot\New Expense Tracker.fslod0wrwa.bundle.scp.css
+wwwroot\Meow.styles.css
+wwwroot\Meow.fslod0wrwa.bundle.scp.css
 AboutAssets.txt
 wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
