@@ -1,0 +1,113 @@
+﻿ 
+@page "/debt"
+@using New_Expense_Tracker.Models
+@using New_Expense_Tracker.Components.Model
+
+@inject UserService UserService
+
+<h1>User Debts</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Debt ID</th>
+            <th>Source</th>
+            <th>Total Debt</th>
+            <th>Paid Amount</th>
+            <th>Remaining Debt</th>
+            <th>Date</th>
+            <th>Due Date</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var debt in Data.Debts)
+        {
+            <tr class="@(debt.RemainingDebt > 0 ? "table-warning" : "table-success")">
+                <td>@debt.Id</td>
+                <td>@debt.Source</td>
+                <td>@debt.Amount</td>
+                <td>@debt.PaidAmount</td>
+                <td>@debt.RemainingDebt</td>
+                <td>@debt.Date.ToString("MM/dd/yyyy")</td>
+                <td>@debt.DueDate.ToString("MM/dd/yyyy")</td>
+                <td>@debt.Description</td>
+                <td>@debt.Status</td>
+                <td>
+                    @if (debt.RemainingDebt > 0)
+                    {
+                        <button class="btn btn-primary btn-sm" @onclick="() => PayDebt(debt.Id)">Pay Debt</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Add New Debt</h2>
+<EditForm Model="newDebt" OnValidSubmit="HandleDebtSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="source">Source</label>
+        <InputText id="source" @bind-Value="newDebt.Source" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="amount">Debt Amount</label>
+        <InputNumber id="amount" @bind-Value="newDebt.Amount" class="form-control" />
+    </div>
+
+    @* <div class="form-group"> *@
+    @*     <label for="paidAmount">Paid Amount</label> *@
+    @*     <InputNumber id="paidAmount" @bind-Value="newDebt.PaidAmount" class="form-control" /> *@
+    @* </div> *@
+
+    <div class="form-group">
+        <label for="dueDate">Due Date</label>
+        <InputDate id="dueDate" @bind-Value="newDebt.DueDate" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <InputText id="description" @bind-Value="newDebt.Description" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Add Debt</button>
+    </div>
+</EditForm>
+
+@code {
+    private AppData Data;
+    private Debts newDebt = new Debts();
+
+    protected override void OnInitialized()
+    {
+        Data = UserService.LoadData() ?? new AppData();
+    }
+
+    private void HandleDebtSubmit()
+    {
+        newDebt.Id = Data.Debts.Count + 1;
+        newDebt.Date = DateTime.Now;
+        Data.Debts.Add(newDebt);
+        UserService.SaveData(Data);
+
+        // Reset form
+        newDebt = new Debts();
+    }
+
+    private void PayDebt(int debtId)
+    {
+        var debt = Data.Debts.FirstOrDefault(d => d.Id == debtId);
+        if (debt != null && debt.RemainingDebt > 0)
+        {
+            debt.PaidAmount = debt.Amount; // Mark the debt as fully paid
+            UserService.SaveData(Data);
+        }
+    }
+}

@@ -1,0 +1,190 @@
+﻿@page "/dashboard"
+@using New_Expense_Tracker.Components.Layout
+@using New_Expense_Tracker.Components.Model
+
+@inject NavigationManager NavigationManager
+@inject UserService UserService
+
+<h2 class="dashboard-header">Dashboard</h2>
+
+<div class="dashboard-container">
+    <!-- Statistics Section -->
+    <div class="statistics-card">
+        <h3>Total Statistics</h3>
+        <div class="statistics-grid">
+            <div class="stat-item">
+                <p>Total Cash Inflows</p>
+                <p>Total Credit: @(Data.Transactions.Any() ? Data.Transactions.Sum(t => t.Credit).ToString("C") : "0")</p>
+            </div>
+            <div class="stat-item">
+                <p>Total Cash Outflows</p>
+                <p>Total Debit: @(Data.Transactions.Any() ? Data.Transactions.Sum(t => t.Debit).ToString("C") : "0")</p>
+            </div>
+            <div class="stat-item">
+                <p>Total Debts</p>
+                <span>@TotalDebts.ToString("C")</span>
+            </div>
+            <div class="stat-item">
+                <p>Cleared Debts</p>
+                <span>@ClearedDebts.ToString("C")</span>
+            </div>
+            <div class="stat-item">
+                <p>Remaining Debts</p>
+                <span>@RemainingDebts.ToString("C")</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transactions Section -->
+    <div class="transactions-section">
+        <h3>Top Transactions</h3>
+        <table class="transaction-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Credit</th>
+                    <th>Debit</th>
+                    <th>Tags</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var transaction in Data.Transactions.Take(5))
+                {
+                    <tr>
+                        <td>@transaction.Title</td>
+                        <td>@transaction.Type</td>
+                        <td>@transaction.Credit.ToString("C")</td>
+                        <td>@transaction.Debit.ToString("C")</td>
+                        <td>@string.Join(", ", transaction.Tags)</td>
+                        <td>@transaction.Date.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pending Debts Section -->
+    <div class="pending-debts-card">
+        <h3>Pending Debts</h3>
+        <ul class="debt-list">
+            @foreach (var debt in Data.Debts.Where(d => d.Amount > d.PaidAmount))
+            {
+                <li>
+                    <p>@debt.Description - @(debt.Amount - debt.PaidAmount) (Due: @debt.Date.ToString("yyyy-MM-dd"))</p>
+                    <button @onclick="() => PayDebt(debt.Id, debt.Amount - debt.PaidAmount)">Pay Debt</button>
+                </li>
+            }
+
+        </ul>
+    </div>
+</div>
+
+<button @onclick="Logout" class="btn-logout">Logout</button>
+
+<style>
+    <style >
+    .dashboard-container {
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 10px;
+    }
+
+    .dashboard-header {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .statistics-card, .transactions-section, .pending-debts-card {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .statistics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 10px;
+        background: #f1f5f9;
+        border-radius: 8px;
+    }
+
+    .transaction-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .transaction-table th, .transaction-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+    .debt-list li {
+        margin: 10px 0;
+        padding: 10px;
+        background: #fef8f2;
+        border-left: 4px solid #ff6b6b;
+    }
+
+    .btn-logout {
+        padding: 10px 15px;
+        background-color: #2575fc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+        .btn-logout:hover {
+            background-color: #1e61c1;
+        }
+</style>
+</style>
+
+@code {
+    private AppData Data;
+    private decimal TotalDebts;
+    private decimal ClearedDebts;
+    private decimal RemainingDebts;
+
+    protected override void OnInitialized()
+    {
+        Data = UserService.LoadData();
+        CalculateDebtStatistics();
+    }
+
+    private void CalculateDebtStatistics()
+    {
+        TotalDebts = Data.Debts.Sum(d => d.Amount);
+        ClearedDebts = Data.Debts.Where(d => d.PaidAmount == d.Amount).Sum(d => d.Amount);
+        RemainingDebts = Data.Debts.Where(d => d.PaidAmount < d.Amount).Sum(d => d.Amount - d.PaidAmount);
+    }
+
+    private void PayDebt(int debtId, decimal paymentAmount)
+    {
+        var debt = Data.Debts.FirstOrDefault(d => d.Id == debtId);
+        if (debt != null)
+        {
+            debt.PaidAmount += paymentAmount;
+            if (debt.PaidAmount > debt.Amount) debt.PaidAmount = debt.Amount;
+            UserService.SaveData(Data);
+            CalculateDebtStatistics(); // Recalculate after payment
+        }
+    }
+
+    private void Logout()
+    {
+        NavigationManager.NavigateTo("/"); // Redirect to login page
+    }
+}

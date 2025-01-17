@@ -1,0 +1,142 @@
+﻿@page "/"
+@inject UserService UserService
+@inject NavigationManager NavigationManager
+@using New_Expense_Tracker.Components.Layout
+@using New_Expense_Tracker.Components.Model
+@using New_Expense_Tracker.Model
+@layout FirstLayout
+
+<h3 class="login-header">Login</h3>
+
+<div class="login-container">
+    <div class="login-card">
+        <input @bind="LoginUsername" placeholder="Username" class="input-field" />
+        <input @bind="LoginPassword" placeholder="Password" type="password" class="input-field" />
+        <button @onclick="LoginPage" class="btn-login">Login</button>
+        <div class="register-link">
+            <a href="/register">Don't have an account? Register</a>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Message))
+        {
+            <p class="error-message">@Message</p>
+        }
+    </div>
+</div>
+
+<style>
+    /* Page Background */
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        padding: 20px;
+    }
+
+    .login-card {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .login-header {
+        text-align: center;
+        color: #333;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #2575fc;
+            box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+        }
+
+    .btn-login {
+        padding: 0.75rem;
+        background-color: #2575fc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+        .btn-login:hover {
+            background-color: #1e61c1;
+            transform: scale(1.05);
+        }
+
+    .register-link {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+        .register-link a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+
+            .register-link a:hover {
+                text-decoration: underline;
+            }
+
+    .error-message {
+        color: red;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+</style>
+
+@code {
+    private string LoginUsername = "";
+    private string LoginPassword = "";
+    private string Message = "";
+    private AppData data;
+
+    protected override void OnInitialized()
+    {
+        // Create an instance of UserService
+        var userService = new UserService();
+
+        // Load the entire AppData object
+        data = userService.LoadData();
+
+        // Now, the Users list can be accessed via data.Users
+        var users = data.Users;
+    }
+
+    private void LoginPage()
+    {
+        var user = data.Users.FirstOrDefault(u => u.Username == LoginUsername);
+
+        if (user != null && UserService.ValidatePassword(LoginPassword, user.Password))
+        {
+            // Redirect to dashboard if login is successful
+            NavigationManager.NavigateTo("/dashboard");
+        }
+        else
+        {
+            Message = "Invalid username or password.";
+        }
+    }
+}

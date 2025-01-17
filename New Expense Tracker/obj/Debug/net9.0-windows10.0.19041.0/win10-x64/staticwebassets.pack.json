@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\New Expense Tracker.styles.css",
+      "PackagePath": "staticwebassets\\New Expense Tracker.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\aakas\\OneDrive - London Metropolitan University\\Documents\\Downloads\\New Expense Tracker\\New Expense Tracker\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.New Expense Tracker.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.New Expense Tracker.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.New Expense Tracker.props",
+      "PackagePath": "build\\New Expense Tracker.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.New Expense Tracker.props",
+      "PackagePath": "buildMultiTargeting\\New Expense Tracker.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.New Expense Tracker.props",
+      "PackagePath": "buildTransitive\\New Expense Tracker.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,152 @@
+﻿@page "/register"
+@using New_Expense_Tracker.Components.Model
+@using New_Expense_Tracker.Models
+@inject UserService UserService
+@inject NavigationManager NavigationManager
+@using New_Expense_Tracker.Components.Layout
+@layout FirstLayout
+
+<h3 class="register-header">Register</h3>
+
+<div class="register-container">
+    <div class="register-card">
+        <input @bind="RegisterUsername" placeholder="Username" class="input-field" />
+        <input @bind="RegisterPassword" placeholder="Password" type="password" class="input-field" />
+        <input @bind="RegisterEmail" placeholder="Email" class="input-field" />
+        <button @onclick="RegisterPage" class="btn-register">Register</button>
+        <div class="login-link">
+            <a href="/">Already have an account? Login</a>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Message))
+        {
+            <p class="error-message">@Message</p>
+        }
+    </div>
+</div>
+
+<style>
+    /* Page Background */
+    .register-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        padding: 20px;
+    }
+
+    .register-card {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .register-header {
+        text-align: center;
+        color: #333;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #2575fc;
+            box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+        }
+
+    .btn-register {
+        padding: 0.75rem;
+        background-color: #2575fc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+        .btn-register:hover {
+            background-color: #1e61c1;
+            transform: scale(1.05);
+        }
+
+    .login-link {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+        .login-link a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+
+            .login-link a:hover {
+                text-decoration: underline;
+            }
+
+    .error-message {
+        color: red;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+</style>
+
+@code {
+    private string RegisterUsername = "";
+    private string RegisterPassword = "";
+    private string RegisterEmail = "";
+    private string Message = "";
+
+    private List<User> Users = new();
+
+    protected override void OnInitialized()
+    {
+        Users = UserService.LoadUsers();
+    }
+
+    private void RegisterPage()
+    {
+        if (string.IsNullOrWhiteSpace(RegisterUsername) || string.IsNullOrWhiteSpace(RegisterPassword))
+        {
+            Message = "Username and password are required.";
+            return;
+        }
+
+        if (Users.Any(u => u.Username == RegisterUsername))
+        {
+            Message = "Username already exists.";
+            return;
+        }
+
+        // Create new user and hash the password
+        var newUser = new User
+            {
+                Username = RegisterUsername,
+                Password = UserService.HashPassword(RegisterPassword),  // Hash the password
+                Email = RegisterEmail
+            };
+
+        Users.Add(newUser);
+        UserService.SaveUsers(Users);
+
+        Message = "Registration successful. Redirecting to login...";
+        Task.Delay(2000).ContinueWith(_ => NavigationManager.NavigateTo("/"));
+    }
+}

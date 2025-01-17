@@ -1,0 +1,155 @@
+﻿@page "/transaction"
+@using New_Expense_Tracker.Components.Model
+@using New_Expense_Tracker.Model
+
+@inject UserService UserService
+
+<h1>User Transactions</h1>
+
+<div class="main-balance-section">
+    <h2>Main Balance: @MainBalance.ToString("C")</h2>
+</div>
+
+<!-- Search and Sort Section -->
+<div class="filter-section">
+    <div class="form-group">
+        <label for="search">Search by Title</label>
+        <InputText id="search" @bind-Value="searchQuery" class="form-control" placeholder="Search by title..." />
+    </div>
+    <div class="form-group">
+        <label for="sortOrder">Sort by Date</label>
+        <InputSelect id="sortOrder" @bind-Value="sortOrder" class="form-control">
+            <option value="Ascending">Ascending</option>
+            <option value="Descending">Descending</option>
+        </InputSelect>
+    </div>
+</div>
+
+<!-- Transactions Table -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Transaction ID</th>
+            <th>Title</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Notes</th>
+            <th>Tags</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in SortedAndFilteredTransactions)
+        {
+            <tr>
+                <td>@transaction.Id</td>
+                <td>@transaction.Title</td>
+                <td>@transaction.Type</td>
+                <td>@transaction.Date.ToString("MM/dd/yyyy")</td>
+                <td>@transaction.Notes</td>
+                <td>@transaction.Tags</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Add New Transaction</h2>
+<EditForm Model="newTransaction" OnValidSubmit="HandleTransactionSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="title">Title</label>
+        <InputText id="title" @bind-Value="newTransaction.Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="amount">Amount</label>
+        <InputNumber id="amount" @bind-Value="transactionAmount" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="type">Type</label>
+        <InputSelect id="type" @bind-Value="transactionType" class="form-control">
+            <option value="Debit">Debit</option>
+            <option value="Credit">Credit</option>
+        </InputSelect>
+    </div>
+
+    <div class="form-group">
+        <label for="notes">Notes</label>
+        <InputText id="notes" @bind-Value="newTransaction.Notes" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="tags">Tags</label>
+        <InputText id="tags" @bind-Value="newTransaction.Tags" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Add Transaction</button>
+    </div>
+</EditForm>
+
+@code {
+
+    private AppData Data;
+    private Transactions newTransaction = new Transactions();
+    private decimal transactionAmount;
+    private string transactionType; // Stores the selected type ("Debit" or "Credit")
+    private string searchQuery = string.Empty; // Search query for filtering transactions
+    private string sortOrder = "Ascending"; // Sort order for dates
+    private decimal MainBalance => Data.Transactions.Sum(t => t.Credit) - Data.Transactions.Sum(t => t.Debit);
+
+    protected override void OnInitialized()
+    {
+        Data = UserService.LoadData();
+    }
+
+    // Dynamically filter and sort transactions
+    private IEnumerable<Transactions> SortedAndFilteredTransactions
+    {
+        get
+        {
+            var filtered = string.IsNullOrWhiteSpace(searchQuery)
+                ? Data.Transactions
+                : Data.Transactions.Where(t => t.Title?.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ?? false);
+
+            return sortOrder == "Ascending"
+                ? filtered.OrderBy(t => t.Date)
+                : filtered.OrderByDescending(t => t.Date);
+        }
+    }
+
+    private void HandleTransactionSubmit()
+    {
+        newTransaction.Id = Data.Transactions.Count + 1;
+        newTransaction.Date = DateTime.Now;
+
+        // Handle Debit or Credit
+        if (transactionType == "Debit")
+        {
+
+            // newTransaction.Type = "Debit";
+            newTransaction.Debit = transactionAmount;
+            newTransaction.Credit = 0;
+        }
+        else if (transactionType == "Credit")
+        {
+            // newTransaction.Type="Credit";
+            newTransaction.Credit = transactionAmount;
+            newTransaction.Debit = 0;
+        }
+        else
+        {
+            Console.WriteLine("Invalid transaction type or type not set!");
+        }
+        Data.Transactions.Add(newTransaction);
+        UserService.SaveData(Data);
+
+        // Reset form
+        newTransaction = new Transactions();
+        transactionAmount = 0;
+        transactionType = null;
+    }
+}
